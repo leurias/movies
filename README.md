@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+This project allows you to import movies and reviews into a MongoDB database and provides functionality to search through movies based on various criteria and display sorted reviews.
 
-Things you may want to cover:
+## Improt Instructions
 
-* Ruby version
+1. **Import Data:**
+   - To import movies, run: 
+     ```bash
+     rake import:movies
+     ```
+   - To import reviews, run:
+     ```bash
+     rake import:reviews
+     ```
 
-* System dependencies
+2. **Search Functionality:**
+   - You can search through the movies database using the following criteria:
+     - **Directors**
+     - **Actors**
+     - **Filming Locations**
+     - **Countries**
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. **Display and Sort Reviews:**
+   - You can display movie reviews and sort them by their star ratings.
